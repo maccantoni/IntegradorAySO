@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #0db7ed; /* Azul Docker */
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #01395f;
+}
+
+/* Cuerpo principal */
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Secciones */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #0db7ed;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+
+section h3 {
+  color: #0992bc;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+section p {
+  font-size: 1.1em;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  background-color: #0db7ed;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.95em;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TP – Virtualización con Docker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Virtualización con Docker</h1>
+    <nav>
+      <ul>
+        <li><a href="#hipervisores">Hipervisores</a></li>
+        <li><a href="#docker">¿Qué es Docker?</a></li>
+        <li><a href="#contenedor">Contenedores</a></li>
+        <li><a href="#imagen">Imagen</a></li>
+        <li><a href="#dockerfile">Dockerfile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hipervisores">
+      <h2>¿Qué es un hipervisor?</h2>
+      <p>Un hipervisor es un software que permite que varias máquinas virtuales (VM), cada una con su propio sistema operativo (SO), se ejecuten en un único servidor físico. 
+        El hipervisor agrupa y asigna los recursos informáticos físicos según las necesidades de cada máquina virtual, lo que permite eficiencia, flexibilidad y escalabilidad.
+        Existen dos tipos de hipervisores:
+    </p>
+      
+        <h3>Hipervisor tipo 1:</h3>  
+        <p>También conocido como bare metal o nativo, se ejecuta directamente sobre el hardware físico del servidor, interactuando de forma directa con la CPU, la memoria y el almacenamiento. 
+            Al no necesitar un sistema operativo host, ofrece mejor rendimiento y mayor seguridad, siendo ideal para entornos empresariales y centros de datos.
+        </p>
+
+        <h3>Hipervisor tipo 2:</h3>  
+        <p>Conocido como hipervisor alojado o incrustado, se ejecuta como una aplicación dentro de un sistema operativo existente. 
+        Aunque su rendimiento es menor debido a la capa adicional del sistema operativo, es más fácil de instalar y usar. 
+        Es adecuado para entornos de prueba, uso personal o situaciones donde se necesitan múltiples sistemas operativos, como en el caso de ingenieros, profesionales de seguridad o usuarios empresariales que requieren acceso a software específico de otras plataformas.
+        </p>
+    </section>
+
+    <section id="docker">
+      <h2>¿Qué es Docker?</h2>
+      <p>Docker es una plataforma de virtualización ligera que permite empaquetar y ejecutar aplicaciones en contenedores. A diferencia de las máquinas virtuales tradicionales, los contenedores comparten el kernel del sistema operativo, lo que los hace más livianos y rápidos.</p>
+    </section>
+
+    <section id="contenedor">
+      <h2>Contenedores</h2>
+      <p>Son instancias en ejecución de una imagen. Son ligeros y aislados, ejecutando aplicaciones en un entorno reproducible y controlado.</p>
+    </section>
+
+    <section id="imagen">
+      <h2>Imagenes</h2>
+      <p>Son plantillas inmutables que contienen todo lo necesario para ejecutar una aplicación, incluyendo el sistema base, dependencias y configuraciones. 
+        Se basan en capas de solo lectura para optimizar almacenamiento y despliegue.</p>
+    </section>
+
+    <section id="dockerfile">
+      <h2>Dockerfile</h2>
+      <p>Es un archivo de configuración donde se define la construcción de una imagen, especificando instrucciones como instalación de paquetes, variables de entorno y comandos de ejecución.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Trabajo Práctico - Arquitectura y Sistemas Operativos</p>
+  </footer>
+</body>
+</html>
